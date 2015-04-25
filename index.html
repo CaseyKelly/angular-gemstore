@@ -10,10 +10,15 @@
 
       <div class="col-md-4 col-md-offset-4">
         <div class="page-header">
-          <h1>The Mother Fucking Store, BITCH</h1>
+          <h1>The Mother Fucking Guitar Store, BITCH</h1>
         </div>
       </div>
-      
+        <div ng-controller="StoreController as store">
+          <h1>{{ store.guitar.year }} {{ store.guitar.make }} {{ store.guitar.model }}</h1>
+          <img src="{{ store.guitar.photoUrl }}" />
+          <h3>{{ store.guitar.description }}</h3>
+        </div>
+        
     </div>
   </body>
 </html>
